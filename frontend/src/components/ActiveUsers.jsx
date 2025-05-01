@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ProgressBar from "./ProgressBar";
 
+const apiBaseURL = import.meta.env.VITE_API_URL;
+
 const ActiveUsers = () => {
   const [activeData, setActiveData] = useState({
     total: 0,
@@ -14,7 +16,7 @@ const ActiveUsers = () => {
     const fetchActiveData = async () => {
       try {
         const response = await fetch(
-          "https://df3a-2401-4900-8821-e06e-df72-6b72-2683-4f6a.ngrok-free.app/dashboard/active/",
+          `${apiBaseURL}/dashboard/active/`,
           {
             headers: {
               "Ngrok-Skip-Browser-Warning": "true"

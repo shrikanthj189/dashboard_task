@@ -2,6 +2,8 @@ import React, { useState, useEffect, useMemo } from "react";
 import Chart from "react-apexcharts";
 import Breadcrumbs from "./Breadcrumbs";
 
+const apiBaseURL = import.meta.env.VITE_API_URL;
+
 const ChartSection = () => {
   const [selectedMonth, setSelectedMonth] = useState("2021-12");
   const [loading, setLoading] = useState(true);
@@ -40,7 +42,7 @@ const ChartSection = () => {
         }
         
         const response = await fetch(
-          "https://df3a-2401-4900-8821-e06e-df72-6b72-2683-4f6a.ngrok-free.app/dashboard/visits/",
+          `${apiBaseURL}/dashboard/visits/`,
           {
             headers: {
               "Ngrok-Skip-Browser-Warning": "true"

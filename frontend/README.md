@@ -1,12 +1,29 @@
-# React + Vite
+# Dashboard Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend application built with React, Vite, and Tailwind CSS for visualizing dashboard data.
 
-Currently, two official plugins are available:
+## Project Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
 
-## Expanding the ESLint configuration
+Before you can run this project, ensure you have the following installed:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
+- [npm](https://www.npmjs.com/) (v8.0.0 or higher recommended)
+
+### Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone <repository_url>
+
+2. Install the project dependencies:
+   
+   ```bash
+   npm install
+
+3. run command 
+
+   ```bash
+   npm run dev

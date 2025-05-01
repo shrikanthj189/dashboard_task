@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import SharpDonutChart from "./SharpDonutChart";
+const apiBaseURL = import.meta.env.VITE_API_URL;
 
 const PerpetualUsers = () => {
   const [perpetualData, setPerpetualData] = useState({
@@ -14,7 +15,7 @@ const PerpetualUsers = () => {
     const fetchPerpetualData = async () => {
       try {
         const response = await fetch(
-          "https://df3a-2401-4900-8821-e06e-df72-6b72-2683-4f6a.ngrok-free.app/dashboard/perpetual/",
+          `${apiBaseURL}/dashboard/perpetual/`,
           {
             headers: {
               "Ngrok-Skip-Browser-Warning": "true"
